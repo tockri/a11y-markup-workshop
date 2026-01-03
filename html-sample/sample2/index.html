@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>スクリーンリーダーを意識していないマークアップ</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header-logo">a11y-markup-workshop</div>
+    </header>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="sidebar-item" onclick="location.href = 'another.html'">
+          新着情報
+        </div>
+        <div class="sidebar-item" onclick="location.href = 'another.html'">
+          人気記事
+        </div>
+        <div class="sidebar-item" onclick="location.href = 'another.html'">
+          おすすめ記事
+        </div>
+        <div class="sidebar-item" onclick="location.href = 'another.html'">
+          お知らせ
+        </div>
+      </nav>
+      <main class="main-content">
+        <div class="page-title">新着情報一覧</div>
+        <div class="article-list">
+          <div class="article-card" onclick="location.href = 'another.html'">
+            <div class="article-thumb"><img src="thumb1.jpg" alt="" /></div>
+            <div class="article-info">
+              <div class="article-title">アクセシビリティの基礎</div>
+              <div class="article-desc">
+                ウェブアクセシビリティの重要性と、基本的な考え方について解説します。
+              </div>
+            </div>
+          </div>
+          <div class="article-card" onclick="location.href = 'another.html'">
+            <div class="article-thumb"><img src="thumb2.jpg" alt="" /></div>
+            <div class="article-info">
+              <div class="article-title">セマンティックなマークアップ</div>
+              <div class="article-desc">
+                適切なHTMLタグを使用することで、スクリーンリーダーの操作性が向上します。
+              </div>
+            </div>
+          </div>
+          <div class="article-card" onclick="location.href = 'another.html'">
+            <div class="article-thumb"><img src="thumb3.webp" alt="" /></div>
+            <div class="article-info">
+              <div class="article-title">ARIA属性の活用</div>
+              <div class="article-desc">
+                WAI-ARIAを使用することで、より高度なインタラクションに対するアクセシビリティを確保できます。
+              </div>
+            </div>
+          </div>
+          <div class="article-card" onclick="location.href = 'another.html'">
+            <div class="article-thumb"><img src="thumb4.jpg" alt="" /></div>
+            <div class="article-info">
+              <div class="article-title">カラーコントラストと視認性</div>
+              <div class="article-desc">
+                色だけでなく、コントラスト比に配慮したデザインの重要性について。
+              </div>
+            </div>
+          </div>
+          <div class="article-card">
+            <div class="article-thumb"><img src="thumb5.jpg" alt="" /></div>
+            <div class="article-info">
+              <div class="article-title">キーボード操作のサポート</div>
+              <div class="article-desc">
+                マウスだけでなく、キーボードのみで全ての操作が可能であることを確認しましょう。
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
