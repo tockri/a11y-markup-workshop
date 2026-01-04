@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>スクリーンリーダーをちょっとだけ意識したマークアップ</title>
+    <title>スクリーンリーダーを意識したマークアップ</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
   </head>
   <body class="body">
@@ -12,68 +12,80 @@
     </header>
     <div class="container">
       <nav class="sidebar">
-        <div class="sidebar-item" onclick="location.href = 'another.html'">
-          新着情報
-        </div>
-        <div class="sidebar-item" onclick="location.href = 'another.html'">
-          人気記事
-        </div>
-        <div class="sidebar-item" onclick="location.href = 'another.html'">
-          おすすめ記事
-        </div>
-        <div class="sidebar-item" onclick="location.href = 'another.html'">
-          お知らせ
-        </div>
+        <menu>
+          <li class="sidebar-item">
+            <a href="another.html">新着情報</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="another.html">人気記事</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="another.html">おすすめ記事</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="another.html">お知らせ</a>
+          </li>
+        </menu>
       </nav>
       <main class="main-content">
         <h1 class="page-title">新着情報一覧</h1>
-        <div class="article-list">
-          <div class="article-card" onclick="location.href = 'another.html'">
+        <ul class="article-list">
+          <li class="article-card" onclick="location.href = 'another.html'">
             <div class="article-thumb"><img src="thumb1.jpg" alt="" /></div>
             <div class="article-info">
-              <h2 class="article-title">アクセシビリティの基礎</h2>
+              <h2 class="article-title">
+                <a href="another.html">アクセシビリティの基礎</a>
+              </h2>
               <div class="article-desc">
                 ウェブアクセシビリティの重要性と、基本的な考え方について解説します。
               </div>
             </div>
-          </div>
-          <div class="article-card" onclick="location.href = 'another.html'">
+          </li>
+          <li class="article-card" onclick="location.href = 'another.html'">
             <div class="article-thumb"><img src="thumb2.jpg" alt="" /></div>
             <div class="article-info">
-              <h2 class="article-title">セマンティックなマークアップ</h2>
+              <h2 class="article-title">
+                <a href="another.html">セマンティックなマークアップ</a>
+              </h2>
               <div class="article-desc">
                 適切なHTMLタグを使用することで、スクリーンリーダーの操作性が向上します。
               </div>
             </div>
-          </div>
-          <div class="article-card" onclick="location.href = 'another.html'">
+          </li>
+          <li class="article-card" onclick="location.href = 'another.html'">
             <div class="article-thumb"><img src="thumb3.webp" alt="" /></div>
             <div class="article-info">
-              <h2 class="article-title">ARIA属性の活用</h2>
+              <h2 class="article-title">
+                <a href="another.html">ARIA属性の活用</a>
+              </h2>
               <div class="article-desc">
                 WAI-ARIAを使用することで、より高度なインタラクションに対するアクセシビリティを確保できます。
               </div>
             </div>
-          </div>
-          <div class="article-card" onclick="location.href = 'another.html'">
+          </li>
+          <li class="article-card" onclick="location.href = 'another.html'">
             <div class="article-thumb"><img src="thumb4.jpg" alt="" /></div>
             <div class="article-info">
-              <h2 class="article-title">カラーコントラストと視認性</h2>
+              <h2 class="article-title">
+                <a href="another.html">カラーコントラストと視認性</a>
+              </h2>
               <div class="article-desc">
                 色だけでなく、コントラスト比に配慮したデザインの重要性について。
               </div>
             </div>
-          </div>
-          <div class="article-card">
+          </li>
+          <li class="article-card" onclick="location.href = 'another.html'">
             <div class="article-thumb"><img src="thumb5.jpg" alt="" /></div>
             <div class="article-info">
-              <h2 class="article-title">キーボード操作のサポート</h2>
+              <h2 class="article-title">
+                <a href="another.html">キーボード操作のサポート</a>
+              </h2>
               <div class="article-desc">
                 マウスだけでなく、キーボードのみで全ての操作が可能であることを確認しましょう。
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </main>
     </div>
   </body>
