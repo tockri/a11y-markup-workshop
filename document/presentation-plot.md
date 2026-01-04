@@ -12,7 +12,7 @@
 
 # 事前準備 / 2. VSCodeでフォルダーを開く
 
-1. ブラウザで、 vscode.dev にアクセスします。
+1. Edgeブラウザのアドレスバーに、`vscode.dev` と入力します。
 1. 「フォルダーを開く」で、a11y-markup-workshop/html-sampleを選択します。
    ![フォルダーを開く](./vscode-open-folder.png)
 1. 左側のファイルブラウザで、sample1/index.htmlをクリックするとHTMLを編集できることを確認しておきます。
@@ -23,6 +23,7 @@
 
 1. Windowsエクスプローラーで、a11y-markup-workshop/html-sampleを選択します。
 1. sample1/index.htmlをダブルクリックするとブラウザで開けることを確認しておきます。
+   ![ファイルを開く](./vscode-open-file.png)
 
 事前準備は以上です。
 
